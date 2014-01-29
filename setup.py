@@ -27,7 +27,7 @@ class PyTest(Command):
         raise SystemExit(errno)
 
 setup(name='pyramid_webassets2',
-      version='0.7.2-fork-webassets2.2',
+      version='0.7.2-fork-webassets2.3',
       description='pyramid_webassets',
       long_description='''\
 Fork of `pyramid_webassets <https://pypi.python.org/pypi/pyramid_webassets>`_
