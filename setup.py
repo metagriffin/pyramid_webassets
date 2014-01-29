@@ -13,7 +13,7 @@ with open(os.path.join(here, 'CHANGES.txt')) as fp:
     CHANGES = fp.read()
 
 #requires = open('requirements.txt').readlines()
-requires = ['pyramid>=1.3', 'webassets>=0.7.1', 'zope.interface', 'six>=1.4.1']
+requires = ['pyramid>=1.3', 'webassets2>=0.7.1', 'zope.interface', 'six>=1.4.1']
 
 class PyTest(Command):
     user_options = []
@@ -27,7 +27,7 @@ class PyTest(Command):
         raise SystemExit(errno)
 
 setup(name='pyramid_webassets2',
-      version='0.7.2-fork-webassets2.1',
+      version='0.7.2-fork-webassets2.2',
       description='pyramid_webassets',
       long_description='''\
 Fork of `pyramid_webassets <https://pypi.python.org/pypi/pyramid_webassets>`_
