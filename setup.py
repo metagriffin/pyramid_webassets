@@ -31,7 +31,7 @@ class PyTest(Command):
         raise SystemExit(errno)
 
 setup(name='pyramid_webassets2',
-      version='0.7.2-fork-webassets2.3',
+      version='0.7.2-fork-webassets2.4',
       description='pyramid_webassets',
       long_description='''\
 Fork of `pyramid_webassets <https://pypi.python.org/pypi/pyramid_webassets>`_
@@ -39,8 +39,8 @@ with the following differences:
 
 * uses `webassets2 <https://pypi.python.org/pypi/webassets2>`_
   instead of `webassets <https://pypi.python.org/pypi/webassets>`_
-* adds PR#29 (`cache dir auto-create <https://github.com/sontek/pyramid_webassets/pull/29>`_)
 * adds PR#30 (`paths config <https://github.com/sontek/pyramid_webassets/pull/30>`_)
+* adds PR#35 (`bundles config <https://github.com/sontek/pyramid_webassets/pull/35>`_)
 ''',
       classifiers=[
           "Programming Language :: Python",
