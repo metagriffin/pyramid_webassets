@@ -39,6 +39,7 @@ but we currently support:
  * ``static_view``: If assets should be registered as a static view using Pyramid config.add_static_view()
  * ``cache_max_age``: If static_view is true, this is passed as the static view's cache_max_age argument (allowing control of expires and cache-control headers)
  * ``paths``: A JSON dictionary of PATH=URL mappings to add paths to alternative asset locations (`URL` can be null to only add the path)
+ * ``bundles``: filename or [asset-spec](http://docs.pylonsproject.org/projects/pyramid/en/latest/glossary.html#term-asset-specification) of a YAML [bundle spec](http://webassets.readthedocs.org/en/latest/loaders.html?highlight=loader#webassets.loaders.YAMLLoader) whose bundles will be auto-registered
 
 ``` ini
 webassets.base_dir              = %(here)s/app/static
@@ -50,6 +51,7 @@ webassets.jst_compiler          = Handlebars.compile
 webassets.url_expire            = False
 webassets.static_view           = True
 webassets.cache_max_age         = 3600
+webassets.bundles               = mypackage:webassets.yaml
 ```
 
 Then you can just use config.add_webasset to add bundles to your environment
